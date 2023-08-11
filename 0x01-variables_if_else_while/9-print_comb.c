@@ -12,7 +12,7 @@ int main(void)
 {
 	int init = 0;
 
-	while (init >= 9)
+	while (init <= 9)
 	{
 		putchar(init);
 		if (init != 9)
