@@ -23,6 +23,6 @@ int main(void)
 		}
 		init++;
 	}
-	putchar('$');
+	putchar('\n');
 	return (0);
 }
