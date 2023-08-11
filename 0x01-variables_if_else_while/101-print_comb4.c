@@ -27,7 +27,7 @@ int main(void)
 					putchar(set1 + 48);
 					putchar(set2 + 48);
 					putchar(set3 + 48);
-					if (set1 != 8 || set2 != 8 || set3 != 9)
+					if (set1 != 7 || set2 != 8 || set3 != 9)
 					{
 						putchar(',');
 						putchar(' ');
