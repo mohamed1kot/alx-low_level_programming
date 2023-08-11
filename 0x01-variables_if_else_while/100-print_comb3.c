@@ -19,11 +19,15 @@ int main(void)
 		while (set2 <= 9)
 		{
 			if (set1 != set2 && set1 < set2)
+			{
 				putchar(set1 + 48);
 				putchar(set2 + 48);
 				if (set1 != 8 || set2 != 9)
+				{
 					putchar(',');
 					putchar(' ');
+				}
+			}
 			set2++;
 		}
 		set1++;
