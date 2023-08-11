@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- * Description : will print the string
+ * main - Entry Point 
  *
- * and return(0);
+ * Description : A C program print a string with a Puts function
+ *
+ * Return: alawys 0 (success)
 */
 
 int main(void)
