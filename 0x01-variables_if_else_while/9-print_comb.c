@@ -15,9 +15,12 @@ int main(void)
 	while (init <= 9)
 	{
 		putchar(init + 48);
+
 		if (init != 9)
+		{
 			putchar(',');
 			putchar(' ');
+		}
 		init++;
 	}
 	putchar('$');
