@@ -12,35 +12,20 @@ int main(void)
 {
 	int set1 = 0;
 	int set2;
-	int set3;
-	int set4;
 
-	while (set1 <= 9)
+	while (set1 <= 99)
 	{
-		set2 = 0;
-		while (set2 <= 9)
+		set2 = set1;
+		while (set2 <= 99)
 		{
-			set3 = 0;
-			while (set3 <= 9)
-			{
-				set4 = 0;
-				while (set4 <= 9)
-				{
-					if (set1 != set2 != set2 != set3 != set4 && set1 < set2 < set3 < set4)
-					{
-						putchar(set1 + 48);
-						putchar(set2 + 48);
-						putchar(' ');
-						putchar(set3 + 48);
-						putchar(set4 + 48);
-						if (set1 != 6 || set2 != 7 || set3 != 8 || set4 != 9)
-							putchar(',');
-							putchar(' ');
-					}
-					set4++;
-				}
-				set3++;
-			}
+			putchar((set1 / 10) + 48);
+			putchar((set1 % 10) + 48);
+			putchar(' ');
+			putchar((set2 / 10) + 48);
+			putchar((set2 % 10) + 48);
+			if (set1 != 98 || set2 != 99)
+				putchar(',');
+				putchar(' ');
 			set2++;
 		}
 		set1++;
