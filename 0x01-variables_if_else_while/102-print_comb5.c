@@ -19,6 +19,7 @@ int main(void)
 		while (set2 <= 99)
 		{
 			if (set1 != set2)
+			{
 				putchar((set1 / 10) + 48);
 				putchar((set1 % 10) + 48);
 				putchar(' ');
@@ -29,6 +30,7 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
+			}
 			set2++;
 		}
 		set1++;
