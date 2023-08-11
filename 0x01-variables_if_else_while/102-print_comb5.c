@@ -24,8 +24,10 @@ int main(void)
 			putchar((set2 / 10) + 48);
 			putchar((set2 % 10) + 48);
 			if (set1 != 98 || set2 != 99)
+			{
 				putchar(',');
 				putchar(' ');
+			}
 			set2++;
 		}
 		set1++;
