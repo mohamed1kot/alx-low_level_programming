@@ -18,16 +18,17 @@ int main(void)
 		set2 = set1;
 		while (set2 <= 99)
 		{
-			putchar((set1 / 10) + 48);
-			putchar((set1 % 10) + 48);
-			putchar(' ');
-			putchar((set2 / 10) + 48);
-			putchar((set2 % 10) + 48);
-			if (set1 != 98 || set2 != 99)
-			{
-				putchar(',');
+			if (set1 != set2)
+				putchar((set1 / 10) + 48);
+				putchar((set1 % 10) + 48);
 				putchar(' ');
-			}
+				putchar((set2 / 10) + 48);
+				putchar((set2 % 10) + 48);
+				if (set1 != 98 || set2 != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			set2++;
 		}
 		set1++;
