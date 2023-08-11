@@ -33,4 +33,5 @@ int main(void)
 		set1++;
 	}
 	putchar('\n');
+	return (0);
 }
