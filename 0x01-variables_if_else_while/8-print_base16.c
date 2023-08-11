@@ -11,13 +11,15 @@
 int main(void)
 {
 	int init = 48;
+	int count = 0;
 
-	while (init <= 122)
+	while (init <= 122, count < 16)
 	{
 		putchar(init);
 		init++;
 		if (init == 58)
 			init = 97;
+		count++;
 	}
 	putchar('\n');
 	return (0);
