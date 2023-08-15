@@ -3,9 +3,9 @@
 /**
  * main - Entry point
  *
- * Describtion: A C program is print the word "_putchar"
+ * description: A C program print _putchar use _putchar()
  *
- * Return: Always 0 (success).
+ * Return: Alwayes 0 (success)
 */
 
 int main(void)
