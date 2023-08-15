@@ -8,8 +8,6 @@
  * Return: no return
 */
 
-
-
 void times_table(void)
 {
 	int num1;
@@ -31,7 +29,6 @@ void times_table(void)
 				_putchar((multi / 10) + 48);
 			}
 			_putchar((multi % 10) + 48);
-			
 			if (num2 < 9)
 			{
 				_putchar(',');
