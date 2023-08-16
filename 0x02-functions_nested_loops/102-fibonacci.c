@@ -11,9 +11,9 @@
 int main(void)
 {
 	int count;
-	int new;
-	int fib1 = 0;
-	int fib2 = 1;
+	unsigned long new;
+	unsigned long fib1 = 0;
+	unsigned long fib2 = 1;
 
 	for (count = 0; count < 50; count++)
 	{
