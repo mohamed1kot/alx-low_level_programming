@@ -18,7 +18,7 @@ int main(void)
 	for (count = 0; count < 50; count++)
 	{
 		new = fib1 + fib2;
-		printf("%1u", new);
+		printf("%lu", new);
 		fib1 = fib2;
 		fib2 = new;
 		if (count == 49)
