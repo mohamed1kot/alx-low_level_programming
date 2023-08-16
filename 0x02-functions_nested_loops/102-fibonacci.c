@@ -13,9 +13,10 @@ int main(void)
 	int sum = 0;
 	int count;
 
-	for (count = 1; count <= 50; count++)
+	printf("%d, %d, ", 0, 1);
+	for (count = 2; count <= 50; count++)
 	{
-		sum += count;
+		sum = (count - 1) + (count - 2);
 		printf("%d", sum);
 		if (count == 49)
 		{
