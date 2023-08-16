@@ -10,24 +10,24 @@
 
 int main(void)
 {
-	int count = 1;
+	int count;
 	int new;
 	int fib1 = 0;
 	int fib2 = 1;
 
-	for (count = 1; count <= 50; count++)
+	for (count = 0; count < 50; count++)
 	{
 		new = fib1 + fib2;
 		printf("%1u", new);
 		fib1 = fib2;
 		fib2 = new;
-		if (count < 50)
+		if (count == 49)
 		{
-			printf(", ");
+			printf("\n");
 		}
 		else
 		{
-			printf("\n");
+			printf(", ");
 		}
 	}
 	return (0);
