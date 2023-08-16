@@ -1,32 +1,34 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - entry n point
  *
- * description: in this program i will count fibonithi
+ * description: A c program is count fibonaci sequance
  *
  * Return: Always 0 (success)
 */
 
 int main(void)
 {
-	int sum = 0;
-	int count;
+	int count = 1;
+	int new;
+	int fib1 = 0;
+	int fib2 = 1;
 
-	printf("%d, %d, ", 0, 1);
-	for (count = 2; count <= 50; count++)
+	for (count = 1; count <= 50; count++)
 	{
-		sum = (count - 1) + (count - 2);
-		printf("%d", sum);
-		if (count == 49)
-		{
-			printf("\n");
-		}
-		else
+		new = fib1 + fib2;
+		printf("%1u", new);
+		fib1 = fib2;
+		fib2 = new;
+		if (count < 50)
 		{
 			printf(", ");
 		}
-
+		else
+		{
+			printf("\n");
+		}
 	}
 	return (0);
 }
