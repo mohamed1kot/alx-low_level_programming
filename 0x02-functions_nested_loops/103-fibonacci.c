@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	unsigned long  count;
+	float  count;
 	unsigned long new = 0;
 	unsigned long fib1 = 0;
 	unsigned long fib2 = 1;
