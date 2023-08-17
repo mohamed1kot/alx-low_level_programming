@@ -12,14 +12,20 @@ void print_diagonal(int n)
 {
 	int count1;
 	int count2;
-
-	for (count1 = 1; count1 <= n; count1++)
+	if (n > 0)
 	{
-		for (count2 = 1; count2 < count1; count2++)
+		for (count1 = 1; count1 <= n; count1++)
 		{
-			_putchar(32);
+			for (count2 = 1; count2 < count1; count2++)
+			{
+				_putchar(32);
+			}
+			_putchar(92);
+			_putchar('\n');
 		}
-		_putchar(92);
+	}
+	else
+	{
 		_putchar('\n');
 	}
 }
