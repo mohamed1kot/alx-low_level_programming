@@ -12,8 +12,8 @@ char *rot13(char *str)
 {
 	int j;
 
-	char str1[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOBQRSTUVWXYZ";
-	char str2[] = "nopqrstuvwxyzABCDEFGHIJKLMNOBQRSTUVWXYZabcdefghijklm";
+	char str1[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char str2[] = "nopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklm";
 	char *ptr = str;
 
 	while (*str)
