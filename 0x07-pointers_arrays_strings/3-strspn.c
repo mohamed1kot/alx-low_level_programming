@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _strspn - function calculates the length (in bytes) of the initial segment of s
+ * _strspn - function calculates the length of the initial segment of s
  *
  * @s :string input will search in it
  *
- * @ accept : string input i will search about it
+ * @accept : string input i will search about it
  *
  * Return: sum
 */
