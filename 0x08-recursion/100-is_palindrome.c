@@ -4,6 +4,7 @@
  * _ind - count the index of string s
  *
  * @s: input string
+ * @len: input of initial length 0
  *
  * Return: index of string
 */
