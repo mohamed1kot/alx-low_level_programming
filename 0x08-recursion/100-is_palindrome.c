@@ -8,15 +8,11 @@
  * Return: index of string
 */
 
-int _ind(char *s)
+int _ind(char *s, int len)
 {
-	int i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	i--;
-	return (i);
+	if (*s == '\0')
+		return (len - 1);
+	return (_ind(s + 1, len + 1));
 }
 /**
  * palindrome - check if this string is plaindrome or not
@@ -47,5 +43,5 @@ int palindrome(char *s, int f, int l)
 
 int is_palindrome(char *s)
 {
-	return (palindrome(s, 0, _ind(s)));
+	return (palindrome(s, 0, _ind(s, 0)));
 }

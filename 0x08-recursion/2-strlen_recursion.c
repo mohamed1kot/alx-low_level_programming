@@ -6,7 +6,7 @@
  * @s : the input string
  *
  * Return: length of string
-*/
+a function that returns 1 if a string is a palindrome and 0 if not*/
 
 int _strlen_recursion(char *s)
 {
