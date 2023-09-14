@@ -2,26 +2,41 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-/***/
+/**
+ * print_strings - a function that prints strings, followed by a new line.
+ *
+ * @separator : is the string to be printed between the strings.
+ * @n : number of string will be print it.
+ *
+ * Return: NONE.
+*/
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list v_arg;
-	unsigned int count;
+	va_list list;
+	char *sep;
+	char *ptr;
+	int count;
 
-	if (separator == NULL || n == 0)
-		return;
-	va_start(v_arg, n);
+	if (separator == NULL)
+		sep = "";
+	else
+	{
+		sep = (char *)separator;
+	}
+	va_start(list, n);
 	for (count = 0; count < n; count++)
 	{
-		if (!va_arg(v_arg, const unsigned int))
+		ptr = va_arg(list, char *);
+		if (ptr == NULL)
 			printf("(nil)");
 		else
 		{
-			printf("%s", va_arg(v_arg, char *));
+			printf("%s", ptr);
 		}
 		if (count != n - 1)
-			printf("%s", separator);
+			printf(", ");
 	}
 	printf("\n");
+	va_end(list);
 }
