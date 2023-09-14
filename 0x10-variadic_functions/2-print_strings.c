@@ -16,7 +16,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list list;
 	char *sep;
 	char *ptr;
-	int count;
+	unsigned int count;
 
 	if (separator == NULL)
 		sep = "";
@@ -35,7 +35,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", ptr);
 		}
 		if (count != n - 1)
-			printf(", ");
+			printf("%s", sep);
 	}
 	printf("\n");
 	va_end(list);
