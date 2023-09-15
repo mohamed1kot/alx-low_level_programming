@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 	va_start(list, format);
 	while (format && format[n])
 		n++;
-	while (fromat && format[l])
+	while (format && format[l])
 	{
 		if (l == n - 1)
 			sep = "";
