@@ -19,9 +19,9 @@ void print_all(const char * const format, ...)
 	int l = 0;
 
 	va_start(list, format);
-	while (format && format[n])
+	while (format[n])
 		n++;
-	while (format && format[l])
+	while (format[l])
 	{
 		if (l == n - 1)
 			sep = "";
@@ -31,7 +31,7 @@ void print_all(const char * const format, ...)
 				printf("%c%s", va_arg(list, int), sep);
 				break;
 			case 'i':
-				printf("%i%s", va_arg(list, int), sep);
+				printf("%d%s", va_arg(list, int), sep);
 				break;
 			case 'f':
 				printf("%f%s", va_arg(list, double), sep);
@@ -39,9 +39,8 @@ void print_all(const char * const format, ...)
 			case 's':
 				ptr = va_arg(list, char *);
 				if (ptr == NULL)
-					printf("%s%s", "(nil)", sep);
-				if (ptr != NULL)
-					printf("%s%s", ptr, sep);
+					ptr = "(nil)";
+				printf("%s%s", ptr, sep);
 				break;
 		}
 		l++;
