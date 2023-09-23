@@ -1,13 +1,9 @@
-extern printf
-
 section	.text
-   global main
+	global main
+	extern printf
 main:
-	mov	ecx,msg
-	mov	ebx,1
-	mov	eax,4
-	int	0x80
-	mov	eax,1
-	int	0x80
+	mov	edi,msg
+	mov	eax,0
+	call	printf
 section	.data
-msg db 'Hello, Holberton', 0xa, 0
+	msg db 'Hello, Holberton', 0xa, 0
