@@ -38,16 +38,16 @@ int main(int argc, char **argv)
 	num1 = write(file_to, BUFF, num);
 	if (num1 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		close(file_from), close(file_to), exit(99);
 	}
 	if (close(file_to) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close %d\n", file_to), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to), exit(100);
 	}
 	if (close(file_from) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close %d\n", file_from), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from), exit(100);
 	}
 	close(file_to), close(file_from);
 	return (0);
