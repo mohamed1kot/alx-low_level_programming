@@ -48,6 +48,7 @@ void print_elf_header_info(const Elf64_Ehdr *header)
 int main(int argc, char **argv)
 {
 	const char *filename;
+	Elf64_Ehdr header;
 	int fd;
 
 	if (argc != 2)
@@ -64,7 +65,6 @@ int main(int argc, char **argv)
 		perror("Error opening file");
 		return (98);
 	}
-	Elf64_Ehdr header;
 
 	if (read(fd, &header, sizeof(header)) != sizeof(header))
 	{
